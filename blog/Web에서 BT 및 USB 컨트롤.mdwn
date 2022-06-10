@@ -27,5 +27,5 @@ Web Bluetooth 오픈소스에 대한 정보는 [이곳]을 참고하면 된다.
 
 
 
-[여기] (https://web.dev/i18n/ko/bluetooth/ "Web Bluetooth API 연결에 대한 설명")
-[이곳] (https://github.com/WebBluetoothCG/web-bluetooth/blob/main/implementation-status.md "Web Bluetooth - github")
+[여기] : https://web.dev/i18n/ko/bluetooth/ "Web Bluetooth API 연결에 대한 설명"
+[이곳] : https://github.com/WebBluetoothCG/web-bluetooth/blob/main/implementation-status.md "Web Bluetooth - github"
