@@ -1,0 +1,11 @@
+# CORS(Cross-Origin Resource Sharing)란 무엇인가?
+CORS(교차 출처 리소스 공유)는 한 출처에서 실행중인 웹 애플리케이션이 다른 출처의 선택한 자원에 접근할 수 있는 권한을 부여하도록 브라우저에 알려주는 체제이다.
+
+다시 말해, 서로 다른 도메인에서 리소스 공유를 하는 것을 제한하기 위한 정책인 것이다.
+
+- CORS의 기본 동작과정
+    1. 클라이언트에서 HTTP요청의 헤더에 Origin을 담아 전달한다.
+    2. 서버는 응답헤더에 Access-Control-Allow-Origin을 담아 클라이언트에 전달한다.
+    3. 클라이언트에서 자신이 보냈던 요청의 Origin과 서버가 보내준 Access-Control-Allow-Origin을 비교한다.
+
+nginx에서 Access-Control-Allow-Origin을 설정하여 
