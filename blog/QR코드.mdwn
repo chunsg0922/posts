@@ -21,10 +21,11 @@ Quick Response라는 의미를 가진다고 한다.
 
 
 # QR코드 Scan Application
-## Cordova
-- Cordova에서 사용하는 플러그인 중 하나인 phonegap-plugin-barcodescanner는 구글에서 제공하는 오픈소스 라이브러리인 zxing을 참조하여 사용한다.
 
-zxing의 기본적인 흐름은 다음 형식을 따른다고 한다.
+## Cordova
+- Cordova에서 사용하는 플러그인 중 하나인 `phonegap-plugin-barcodescanner`는 구글에서 제공하는 오픈소스 라이브러리인 zxing을 참조하여 사용한다.
+
+`zxing`의 기본적인 흐름은 다음 형식을 따른다고 한다.
 1. 카메라를 동작하고 프리뷰를 가동한다.
 2. 카메라로부터 지속적으로 영상을 받아들인다.
 3. 영상에서 밝기값만 추출하여 이를 기반으로 이진화를 수행한다.(흑백처리/ 카메라에서 얻는 영상은 YCbCr 포맷으로 여기서 Y(명도)만 빼오면 된다.)
@@ -34,4 +35,11 @@ zxing의 기본적인 흐름은 다음 형식을 따른다고 한다.
 
 기본적으로 QR코드의 판독 과정을 전체적으로 따르고 있는 것을 알 수 있다. 
 
-- 
+## Vue
+- Vue에서 사용하는 QR 스캔 라이브러리에는 `vue-qrcode-reader`라는 오픈 소스 라이브러리가 있다.
+
+`vue-qrcode-reader`는 Vue Native 개발 환경은 지원하지 않는다.
+JS기반 소스이기 때문에 기본적으로 웹 브라우저 환경도 지원한다.(공식페이지에서는 Explorer, Edge, Firefox, Chrome, Safari를 지원한다고 나와있다.)
+그러나, Chrome이나 Safari는 로컬 환경에서 작동하거나 HTTPS 환경에서만 동작하도록 되어있다.(브라우저의 제약사항)
+
+깃허브 소스코드를 분석해보았다.
