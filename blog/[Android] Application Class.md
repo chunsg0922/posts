@@ -8,6 +8,7 @@
 2. AndroidManifest.xml에 Application Class name을 추가한다.
 3. 애플리케이션 내의 컴포넌트들 사이에서 context를 이용한 접근이 가능하다.(데이터 공유)
 
+> 다음은 Application Class를 상속받는 Application 기능 클래스를 정의한 것이다.
 ```Kotlin
 public calss MyApplication : Application(){
 
@@ -27,3 +28,9 @@ public calss MyApplication : Application(){
 }
 
 ```
+
+> 다음으로 AndroidManifest.xml에 Application 설정을 한다.
+``` xml
+
+
+``` 
